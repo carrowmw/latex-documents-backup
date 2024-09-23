@@ -1,0 +1,61 @@
+\documentclass[a4paper,11pt]{article}
+% Include document style
+\input{styles/document_style}
+% \input{styles/bibliography_style}
+
+% % Include bibliography style
+% \input{styles/bibliography_style}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{RADIAN – A Library for Scalable Quality-Aware Pedestrian Data Streams}
+\fancyhead[R]{\thepage}
+\fancyfoot[L]{Carrow Morris-Wiltshire}
+\fancyfoot[R]{\today}
+
+% Title
+\title{RADIAN – A Library for Scalable Quality-Aware Pedestrian Data Streams}
+\author{Carrow Morris-Wiltshire}
+\date{\today}
+
+\begin{document}
+
+\label{sec:abstract}
+\input{sections/abstract}
+
+\label{sec:acronyms}
+\input{sections/acronyms}
+
+% \label{sec:introduction}
+% \input{sections/introduction}
+
+% \label{sec:research_objectives}
+% \input{sections/research_objectives}
+
+% \label{sec:literature_review}
+% \input{sections/literature_review}
+
+\label{sec:methodology}
+\input{sections/methodology}
+
+\label{sec:results}
+\input{sections/results}
+
+\label{sec:discussion}
+\input{sections/discussion}
+
+% \label{sec:conclusion}
+% \input{sections/conclusion}
+
+Include bibliography
+\newpage
+\label{sec:bibliography}
+\bibliography{../../shared/bibliography/references}
+
+% % Include tables
+% \label{sec:tables}
+% \input{figures/tables}
+
+
+\end{document}

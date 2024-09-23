@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{article}
+% Include document style
+\input{styles/document_style}
+% \input{styles/bibliography_style}
+
+% % Include bibliography style
+% \input{styles/bibliography_style}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Annual Progression Report 1}
+\fancyhead[R]{\thepage}
+\fancyfoot[L]{Carrow Morris-Wiltshire}
+\fancyfoot[R]{\today}
+
+% Title
+\title{\href{https://carrowmw.github.io/latex-documents/}{Annual Progression Report 1}}
+\author{Carrow Morris-Wiltshire}
+\date{\today}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\input{sections/title_page}
+\newpage
+
+\label{sec:introduction}
+\input{sections/introduction.tex}
+
+\label{sec:aim_objectives_scope}
+\input{sections/aim_objectives_scope.tex}
+
+\label{sec:approach_and_methodology}
+\input{sections/approach_and_methodology.tex}
+
+\label{sec:progress_to_date}
+\input{sections/progress_to_date.tex}
+
+\label{sec:work_plan}
+\input{sections/work_plan.tex}
+
+\label{sec:financial expenditure}
+\input{sections/financial_expenditure.tex}
+
+\label{sec:bibliography}
+\newpage
+\section{References}
+\bibliography{../../shared/bibliography/references}
+
+\end{document}

@@ -1,0 +1,19 @@
+% tables/literature_review/event_detection_methods.tex
+\begin{table}[H]
+    \centering
+    \scriptsize % Reduce font size
+    \begin{tabular}{|R{2cm}|R{6cm}|R{6cm}|}
+        \hline
+        \textbf{Method}               & \textbf{Examples}                                                                                       & \textbf{Description}                                                                                                        \\ \hline
+        Rule-based                    & Threshold-based detection, finite state machines, and expert systems.                                   & Simple to implement but may struggle with complex event patterns and adaptability.                                          \\ \hline
+        Machine learning              & Supervised learning: decision trees, support vector machines, naive Bayes, etc.
+
+        Unsupervised learning: clustering, anomaly detection, etc.
+                                      & Can adapt to complex event patterns but require sufficient labelled data for training.                                                                                                                                                \\ \hline
+        Deep learning                 & Convolutional neural networks (CNNs), recurrent neural networks (RNNs), Graph neural networks (GNNs).   & Can handle high-dimensional and unstructured data but require large amounts of training data and computational resources.   \\ \hline
+        Statistical and probabilistic & Hidden Markov models (HMMs), Bayesian networks, and Gaussian mixture models (GMMs).                     & Can capture the uncertainties and dependencies in event occurrences but may require prior knowledge of event distributions. \\ \hline
+        Hybrid                        & Combining rule-based and machine learning methods or integrating deep learning with statistical models. & Can provide more robust and accurate event detection but may increase the complexity of the system.                         \\ \hline
+    \end{tabular}
+    \caption{Event detection methods for data quality}
+    \label{table:event_detection_methods}
+\end{table}

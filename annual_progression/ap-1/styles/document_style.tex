@@ -1,0 +1,138 @@
+% Packages
+\usepackage{lmodern}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{acronym}
+\usepackage{afterpage}
+\usepackage{pagecolor}
+\usepackage{courier}
+\usepackage{../../shared/styles/govuk_colors}
+
+% Define a monospaced font using fontspec
+\setmonofont{Courier New} % You can change to any other monospaced font available on your system
+
+% Bibliography
+\bibliographystyle{agsm}
+
+% Page Layout
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+% Hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=link-color,
+    filecolor=link-color,
+    urlcolor=link-active-color,
+    citecolor=link-color,
+    pdftitle={Your Title Here},
+    pdfauthor={Your Name},
+    pdfpagemode=FullScreen,
+}
+
+\setmainfont[
+    Path=/Users/administrator/Code/latex-documents/shared/styles/fonts/Inter-4.0/,
+    Extension=.ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+]{Inter}
+
+% Listings
+\lstset{
+    backgroundcolor=\color{color-light-grey},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    framesep=0.19em,
+    rulecolor=\color{color-mid-grey},
+    numbers=left,
+    numberstyle=\color{secondary-text-color},
+    keywordstyle=\color{secondary-text-color}\bfseries,
+    keywordstyle=[2]\color{secondary-text-color}\bfseries,
+    keywordstyle=[3]\color{secondary-text-color}\bfseries\itshape,
+    identifierstyle=\color{secondary-text-color},
+    commentstyle=\color{secondary-text-color},
+    stringstyle=\color{secondary-text-color},
+}
+
+% Captions
+\captionsetup{
+    font={stretch=1.2},
+    textfont={color=secondary-text-color},
+    labelfont=bf,
+    skip=4mm,
+    singlelinecheck=false,
+    justification=centering
+    % justification=raggedright
+}
+
+% Custom heading styles
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{brand-color}} % Format for \section
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries\color{brand-color}} % Format for \subsection
+{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries\color{brand-color}} % Format for \subsubsection
+{\thesubsubsection}{1em}{}
+
+% Optional: Custom spacing for sections
+\titlespacing*{\section}
+{0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+\titlespacing*{\subsection}
+{0pt}{1.5ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+\titlespacing*{\subsubsection}
+{0pt}{1ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{brand-color} Custom Header Left}
+\fancyhead[C]{\color{brand-color} Custom Header Center}
+\fancyhead[R]{\color{brand-color} Custom Header Right}
+
+% Set the color of the header line
+\renewcommand{\headrule}{{\color{brand-color}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+\renewcommand{\headrulewidth}{0.8pt}  % Thickness of the header line
+
+% Header
+\setlength{\headheight}{13.6pt}
+\addtolength{\topmargin}{-1.6pt}
+
+% array
+% Centered column
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+% Top ragged right aligned column
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcolumntype{L}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% Code listings
+\lstset{basicstyle=\ttfamily,
+    columns=fullflexible,
+    breaklines=true}

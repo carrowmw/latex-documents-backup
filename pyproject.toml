@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "latex-documents"
+version = "0.1.0"
+description = ""
+authors = ["Carrow Morris-Wiltshire"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.13"
+plotly = "^5.23.0"
+osmnx = "^1.9.4"
+matplotlib = "^3.9.2"
+shapely = "^2.0.5"
+ipykernel = "^6.29.5"
+phd-package = {path = "/Users/administrator/Code/python/phd-project", develop = true}
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

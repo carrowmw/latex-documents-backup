@@ -1,0 +1,39 @@
+\begin{algorithm}
+    \caption{Find and process consecutive sequences}
+    \begin{algorithmic}[1]
+        \Require DataFrame $df$ with time series data
+        \Ensure DataFrame with consecutive sequences and assigned sequence numbers
+
+        \Function{ProcessConsecutiveSequences}{$df$}
+        \State $sequences \gets \emptyset$
+        \State $current\_sequence \gets \emptyset$
+        \State $\Delta t_{min} \gets$ minimum time delta between timestamps
+        \State $w \gets$ window size
+        \State $h \gets$ horizon
+
+        \For{each row $r$ in $df$}
+        \If{$current\_sequence = \emptyset$ \textbf{or} time difference between $r$ and last row of $current\_sequence = \Delta t_{min}$}
+        \State Add $r$ to $current\_sequence$
+        \Else
+        \If{length of $current\_sequence > w + h$}
+        \State Add $current\_sequence$ to $sequences$
+        \EndIf
+        \State $current\_sequence \gets \{r\}$
+        \EndIf
+        \EndFor
+
+        \If{length of $current\_sequence > w + h$}
+        \State Add $current\_sequence$ to $sequences$
+        \EndIf
+
+        \State $result \gets \emptyset$
+        \For{$i \gets 1$ to $|sequences|$}
+        \State Assign sequence number $i$ to all rows in $sequences[i]$
+        \State Add $sequences[i]$ to $result$
+        \EndFor
+
+        \State \Return $result$
+        \EndFunction
+    \end{algorithmic}
+    \label{alg:process_consecutive_sequences}
+\end{algorithm}

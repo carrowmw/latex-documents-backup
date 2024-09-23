@@ -1,0 +1,49 @@
+% \begin{tikzpicture}
+%     \node[anchor=north east, yshift=-15pt, xshift=-15pt] at (current page.north east) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[anchor=north west, yshift=-15pt, xshift=15pt] at (current page.north west) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[anchor=south west, yshift=15pt, xshift=15pt] at (current page.south west) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[anchor=south east, yshift=15pt, xshift=-15pt] at (current page.south east) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[align=center, text width=0.8\textwidth, yshift=-0.5cm] at (current page.center) {
+%         \Huge\bfseries\color{blue} My Custom Title \\[1em]
+%         \large\textit{Subtitle or Author Name} \\[1em]
+%         \normalsize Some other information
+%     };
+% \end{tikzpicture}
+
+% \begin{tikzpicture}
+%     \node[anchor=north east, yshift=-15pt, xshift=-15pt] at (current page.north east) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[anchor=north west, yshift=-15pt, xshift=15pt] at (current page.north west) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[anchor=south west, yshift=15pt, xshift=15pt] at (current page.south west) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[anchor=south east, yshift=15pt, xshift=-15pt] at (current page.south east) {\includegraphics[width=0.15\linewidth]{example-image}};
+%     \node[align=center, text width=0.8\textwidth, yshift=-0.5cm] at (current page.center) {
+%         \Huge\bfseries\color{blue} My Custom Title \\[1em]
+%         \large\textit{Subtitle or Author Name} \\[1em]
+%         \normalsize Some other information
+%     };
+% \end{tikzpicture}
+
+\begin{titlepage}
+    \newgeometry{left=6cm}
+    \definecolor{titlepage-color}{HTML}{FFFFFF}
+    \newpagecolor{titlepage-color}\afterpage{\restorepagecolor}
+    \newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
+    \begin{flushleft}
+        \noindent
+        \\[-1em]
+        \color[HTML]{5F5F5F}
+        \makebox[0pt][l]{\colorRule[435488]{1.3\textwidth}{4pt}}
+        \par
+        \noindent
+
+        \setstretch{1.4}
+        \vfill
+        \noindent {\huge \textbf{\textsf{My Custom Title}}}
+        \vskip 1em
+            {\Large \textsf{My Custom Subtitle}}
+        \vskip 2em
+        \noindent {\Large \textsf{Author Name}}
+        \vfill
+
+        \textsf{June 2024}
+    \end{flushleft}
+\end{titlepage}

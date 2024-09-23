@@ -1,0 +1,34 @@
+\begin{titlepage}
+    \newgeometry{left=6cm}
+    \definecolor{titlepage-color}{HTML}{FFFFFF}
+    \newpagecolor{titlepage-color}\afterpage{\restorepagecolor}
+    \newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
+    \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{images/title_page_background.png}};
+    \end{tikzpicture}
+    \begin{flushleft}
+        \noindent
+        \color[HTML]{FFFFFF}
+        \noindent
+        \vskip 1em
+        \noindent
+        \fontsize{40}{40}\selectfont \href{https://carrowmw.github.io/latex-documents/}{Annual Progression Report 1}
+        \vskip 1em
+        \small Produced by
+        \newline
+        \Large Carrow Morris-Wiltshire
+        \vskip 2em
+        \noindent
+        \small Supervised by {\large\textit{Prof. Stuart Barr}} and {\large\textit{Prof. Phillip James}}
+        \vskip 0em
+        \small Sponsored by {\large DSTL}
+        \vskip 3em
+        \fontsize{24}{24}\selectfont June 2024
+        \vfill
+    \end{flushleft}
+
+    % Logo in bottom right
+    \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.south east) [anchor=south east, xshift=-1cm, yshift=1cm] {\includegraphics[width=0.4\linewidth]{images/newcastle_logo.png}};
+    \end{tikzpicture}
+\end{titlepage}

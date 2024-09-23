@@ -1,0 +1,30 @@
+\section{Introduction}
+
+% •	Importance of data quality in IoT sensor networks for smart cities
+% •	Cities as complex systems
+% •	What are wireless sensor networks
+% •	Objectives and scope of the literature review
+
+% Papers to consider:
+% (Gubbi et al. 2013)  - Internet of Things (IoT): A vision, architectural elements, and future directions
+% (Bisdikian et al. 2009) – A letter soup for the quality of information in sensor networks
+% (Bocchi and Facchini 2016) – Living at the edge of chaos: a complex systems view of cities
+% (Mohammadi and Taylor 2017) – Smart city digital twins
+% (Ma et al. 2004) – Online mining in sensor networks
+% (Elkhodr and Alsinglawi, 2020) - Data provenance and trust establishment in the Internet of Things
+% (Klein and Lehner 2009) – Representing data quality in sensor data streaming environments
+
+
+The Internet of Things (IoT) refers to a network of interconnected devices, sensors, and actuators that can collect, exchange, and process data over the internet, enabling smart and autonomous systems \citep{atzoriInternetThingsSurvey2010}. IoT encompasses a wide range of applications, from industrial automation and smart homes to healthcare and urban management. Wireless Sensor Networks (WSNs) are a key component of IoT consisting of spatially distributed autonomous sensors that cooperatively monitor physical or environmental conditions, such as temperature, sound, vibration, pressure, motion, or pollutants \citep{akyildizWirelessSensorNetworks2002}. These sensor nodes collect and transmit data wirelessly to a central gateway or base station for further processing and analysis, playing a crucial role in enabling real-time monitoring and analysis of urban environments \citep{gubbiInternetThingsIoT2013}.
+
+The importance of data quality in WSNs for smart cities cannot be overstated. Cities are complex systems that exhibit emergent properties \citep{bocchiLivingEdgeChaos2016} allowing them---in theory---to be adaptable and resilient to changes—much like a living organism \citep{langtonComputationEdgeChaos1990}. However, unlike living organisms, cities currently lack the equivalent of a central nervous system to detect environmental changes and coordinate responses autonomously \citep{tortoraPrinciplesAnatomyPhysiology2018}. High-quality data is crucial for positive decision-making in cities, just as accurate sensory information is vital for living organisms to flourish.
+
+Currently, cities have limited decision-making functionality due to slow, incomplete, and largely disconnected information transmission systems. To build a city-scale digital twin, rapid, interconnected, and ubiquitous sensory information is needed \citep{mohammadiSmartCityDigital2017}. WSN can provide the necessary sensing and communication capabilities to gather and transmit data from the physical world to the internet \citep{maOnlineMiningSensor2004}. WSN and accompanying storage and processing infrastructure have begun to emerge in the form of urban observatories in cities around the world \citep{smithBuildingUrbanObservatory2019,rusliReviewWorldwideUrban2023}. The scale of WSN needed to support a digital twin leave no room for manual calibration of sensors meaning data quality assessments must be carried out autonomously.
+
+WSN data, particularly in real-time streaming scenarios, is inherently prone to errors and inconsistencies which can lead to suboptimal or incorrect decisions in automated decision systems \citep{kleinRepresentingDataQuality2009}. For example, a sensor counting pedestrians might fail to detect an overcrowding event due to malfunction, potentially leading to a delayed emergency response. To address this critical challenge, there is a pressing need for automated systems that are 'quality-aware' and capable of assessing and managing data quality in real-time \citep{bisdikianLetterSoupQuality2009,karkouchDataQualityInternet2016}. These systems must integrate quality control mechanisms along all real-time data pipelines, ensuring continuous monitoring and maintenance of data quality, and provide end-users with transparent insights into data provenance \citep{elkhodrDataProvenanceTrust2020}.
+
+NB: Improving spatial resolution with massive low-cost sensor networks comes with the payoff of increased data quality issues. This is because cheap sensors are more prone to errors and inconsistencies than expensive sensors, and the sheer volume of data generated makes manual calibration infeasible. The human component of data quality assurance is thus replaced by automated systems that must be 'quality-aware' and capable of assessing and managing data quality in real-time \citep{buelvasDataQualityIoTBased2023}.
+
+NB: Significant amount of work in understanding data quality for WSN focussing on air quality \citep{vanzoestDataQualityEvaluation2021}, however there is a distinct gap in mobility data quality.
+
+NB: \cite{sarrabDevelopmentIoTBased2020}

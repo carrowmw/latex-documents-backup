@@ -1,0 +1,124 @@
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tikz}
+
+% Page Layout
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+% Hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+  pdftitle={Your Title Here},
+  pdfauthor={Carrow Morris-Wiltshire},
+  pdfpagemode=FullScreen,
+}
+
+% Colors
+\definecolor{heading-color}{RGB}{40,40,40}
+\definecolor{caption-color}{HTML}{777777}
+\definecolor{listing-background}{HTML}{F7F7F7}
+\definecolor{listing-rule}{HTML}{B3B2B3}
+\definecolor{listing-numbers}{HTML}{B3B2B3}
+\definecolor{listing-text-color}{HTML}{000000}
+\definecolor{listing-keyword}{HTML}{435489}
+\definecolor{listing-keyword-2}{HTML}{1284CA}
+\definecolor{listing-keyword-3}{HTML}{9137CB}
+\definecolor{listing-identifier}{HTML}{435489}
+\definecolor{listing-string}{HTML}{00999A}
+\definecolor{listing-comment}{HTML}{8E8E8E}
+
+% Listings
+\lstset{
+  backgroundcolor=\color{listing-background},
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  framesep=0.19em,
+  rulecolor=\color{listing-rule},
+  numbers=left,
+  numberstyle=\color{listing-numbers},
+  keywordstyle=\color{listing-keyword}\bfseries,
+  keywordstyle=[2]\color{listing-keyword-2}\bfseries,
+  keywordstyle=[3]\color{listing-keyword-3}\bfseries\itshape,
+  identifierstyle=\color{listing-identifier},
+  commentstyle=\color{listing-comment},
+  stringstyle=\color{listing-string},
+}
+
+% Captions
+\captionsetup{
+  font={stretch=1.2},
+  textfont={color=caption-color},
+  labelfont=bf,
+  skip=4mm,
+  singlelinecheck=false,
+  justification=raggedright
+}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Your Title Here}
+\fancyhead[R]{\thepage}
+\fancyfoot[L]{Carrow Morris-Wiltshire}
+\fancyfoot[R]{\today}
+
+% Title
+\title{Your Title Here}
+\author{Carrow Morris-Wiltshire}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\label{sec:abstract}
+\input{sections/abstract}
+
+\label{sec:introduction}
+\input{sections/introduction}
+
+\label{sec:research_objectives}
+\input{sections/research_objectives}
+
+\label{sec:literature_review}
+\input{sections/literature_review}
+
+\label{sec:methodology}
+\input{sections/methodology}
+
+\label{sec:results}
+\input{sections/results}
+
+\label{sec:discussion}
+\input{sections/discussion}
+
+\label{sec:conclusion}
+\input{sections/conclusion}
+
+\bibliographystyle{plain}
+\bibliography{../../shared/bibliography/references}
+\end{document}
+
+\end{document}

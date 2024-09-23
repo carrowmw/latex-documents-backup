@@ -1,0 +1,24 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Fizza et~al.]{Fizza, Jayaraman, Banerjee, Georgakopoulos \harvardand\ Ranjan}{2022}{fizzaAgeDataAware2022}
+Fizza, K., Jayaraman, P.~P., Banerjee, A., Georgakopoulos, D. \harvardand\ Ranjan, R.  \harvardyearleft 2022\harvardyearright , Age of {{Data Aware Internet}} of {{Things Applications}}, {\em in} `2022 {{IEEE}} 19th {{Annual Consumer Communications}} \& {{Networking Conference}} ({{CCNC}})', pp.~399--404.
+
+\harvarditem[Froese et~al.]{Froese, Jain, Niedermeier \harvardand\ Renken}{2020}{froeseComparingTemporalGraphs2020}
+Froese, V., Jain, B., Niedermeier, R. \harvardand\ Renken, M.  \harvardyearleft 2020\harvardyearright , `Comparing temporal graphs using dynamic time warping', {\em Social Network Analysis and Mining} {\bf 10},~1--16.
+
+\harvarditem[Heppenstall et~al.]{Heppenstall, Crooks, Malleson, Manley, Ge \harvardand\ Batty}{2021}{heppenstallFutureDevelopmentsGeographical2021}
+Heppenstall, A., Crooks, A., Malleson, N., Manley, E., Ge, J. \harvardand\ Batty, M.  \harvardyearleft 2021\harvardyearright , `Future {{Developments}} in {{Geographical Agent-Based Models}}: {{Challenges}} and {{Opportunities}}', {\em Geogr Anal} {\bf 53}(1),~76--91.
+
+\harvarditem[Kieu et~al.]{Kieu, Nguyen, Ward \harvardand\ Malleson}{2022}{kieuRealtimePredictionsUsing2022}
+Kieu, M., Nguyen, H., Ward, J.~A. \harvardand\ Malleson, N.  \harvardyearleft 2022\harvardyearright , `Towards real-time predictions using emulators of agent-based models', {\em Journal of Simulation} pp.~1--18.
+
+\harvarditem[Klemmer et~al.]{Klemmer, Koshiyama \harvardand\ Flennerhag}{2019}{klemmerAugmentingCorrelationStructures2019}
+Klemmer, K., Koshiyama, A. \harvardand\ Flennerhag, S.  \harvardyearleft 2019\harvardyearright , `Augmenting correlation structures in spatial data using deep generative models', {\em arXiv preprint arXiv:1905.09796} .
+
+\harvarditem[Kutz et~al.]{Kutz, Brunton, Brunton \harvardand\ Proctor}{2016}{kutzDynamicModeDecomposition2016}
+Kutz, J.~N., Brunton, S.~L., Brunton, B.~W. \harvardand\ Proctor, J.~L.  \harvardyearleft 2016\harvardyearright , {\em Dynamic Mode Decomposition: Data-Driven Modeling of Complex Systems}, SIAM.
+
+\harvarditem{Wang \harvardand\ Strong}{1996}{wangAccuracyWhatData1996}
+Wang, R.~Y. \harvardand\ Strong, D.~M.  \harvardyearleft 1996\harvardyearright , `Beyond accuracy: {{What}} data quality means to data consumers', {\em Journal of management information systems} {\bf 12}(4),~5--33.
+
+\end{thebibliography}

@@ -1,0 +1,50 @@
+\section{Results (Plan)}
+
+\subsection{Assessing Stream Quality}
+
+
+\subsection{Predictive Modelling}
+What quality of data leads to the machine learning models underperforming? How can we monitor whether the data quality is 'good enough' to be incorporated into the next level of the pipeline (spatial component)?
+
+To answer this question we will compare the performance of the models trained on the different sets of sensor data. We will plot a combined performance metric against various data quality metrics to determine the relationship between the two.
+
+How well do the models perform at predicting the next value in the sequence?
+
+\begin{enumerate}
+    \item Show range of different results from the models.
+    \item Analyse the affect of completeness of the data on the performance of the models.
+    \item Try to understand the relationship between the different data quality metrics and the performance of the models.
+    \item How does the performance of the model change as the predictive horizon increases?
+    \item Does the model learn the more complex patterns better when the horizon is increased?
+    \item Is this reflected in the hyperparameter tuning (if it is then I would expect the optimal hyper-parameters for number of layers and number of units to increase as the horizon increases)?
+\end{enumerate}
+
+\subsection{Anomaly Detection}
+
+How well do the models perform at detecting anomalies in the data?
+
+\begin{enumerate}
+    \item What are the limitations of the models in detecting anomalies?
+    \item Is there a trade-off between the number of anomalies detected and the number of false positives?
+\end{enumerate}
+
+How well do the models perform at detecting anomalies in the data? What are the limitations of the models in detecting anomalies? Is there a trade-off between the number of anomalies detected and the number of false positives?
+
+To answer this question we will evaluate the performance of the models on the test set. We will plot the number of anomalies detected against the number of false positives to determine the trade-off between the two. This may require some manual labelling of the data to determine the true number of anomalies. Or we could inject synthetic anomalies into the data to determine the performance of the models.
+
+The types of anomalies that we would be looking for are: point anomalies, sequence anomalies and contextual anomalies.
+
+Point anomalies are those which are significantly different from the rest of the data. For example, a sensor reading that is much higher or lower than the rest of the data.
+
+Sequence anomalies are those which are significantly different from the rest of the data in a sequence. For example, a sequence of sensor readings that are much higher or lower than the rest of the data.
+
+Contextual anomalies are those which are significantly different from the rest of the data in a specific context. For example, a sensor reading that is much higher or lower than the rest of the data in a specific location.
+
+
+
+\subsection{Scalability}
+
+How well do the models perform at scale?
+\begin{enumerate}
+    \item Timings for training the models on different sizes of data.
+\end{enumerate}

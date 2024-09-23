@@ -1,0 +1,29 @@
+\begin{table}[h]
+    \centering
+    \scriptsize
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Parameter} & \textbf{Suggestion Type} & \textbf{Value Range/Options} \\
+        \hline
+        window\_size       & suggest\_int             & 2 to 10                      \\
+        \hline
+        horizon            & suggest\_int             & 1 to 12                      \\
+        \hline
+        batch\_size        & suggest\_categorical     & [32, 64, 128]                \\
+        \hline
+        lr                 & suggest\_loguniform      & 1e-5 to 1e-1                 \\
+        \hline
+        epochs             & suggest\_int             & 5 to 50                      \\
+        \hline
+        model\_type        & suggest\_categorical     & ["lstm", "gru"]              \\
+        \hline
+        hidden\_dim        & suggest\_int             & 32 to 256                    \\
+        \hline
+        num\_layers        & suggest\_int             & 1 to 3                       \\
+        \hline
+        dropout            & suggest\_uniform         & 0.0 to 0.5                   \\
+        \hline
+    \end{tabular}
+    \caption{Hyper-parameter tuning configuration}
+    \label{tab:hyperparameters}
+\end{table}

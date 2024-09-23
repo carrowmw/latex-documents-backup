@@ -1,0 +1,22 @@
+% tables/literature_review/dq_dimensions.tex
+\begin{table}[H]
+    \centering
+    \scriptsize % Reduce font size
+    \begin{tabular}{|R{2cm}|R{2cm}|R{5cm}|R{5cm}|}
+        \hline
+        \textbf{Data Quality Dimension} & \textbf{Sub-Dimension} & \textbf{Description}                                                          & \textbf{Factors to consider}                                                                                          \\ \hline
+        Accuracy                        & Preciseness            & How close the measured values are to the true values.                         & Measured values, sensor precision, measurement units, and granularity.                                                \\ \hline
+        Accuracy                        & Certainty              & The confidence or probability that a measured value is true.                  & Sensor calibration, environmental conditions, and measurement techniques, and statistical confidence intervals.       \\ \hline
+        Accuracy                        & Confidence             & Represents the reliability and credibility of the data source.                & Sensor provider's reputation, sensor's conformance to specifications, certification, and independent testing results. \\ \hline
+        Timeliness                      & Freshness              & The degree to which data is recent and not obsolete.                          & Time of last reading, data expiration policies, and data lifecycle management.                                        \\ \hline
+        Timeliness                      & Frequency              & How often the data is collected or updated.                                   & Expected measurement frequency, data collection intervals, and synchronisation between data sources.                  \\ \hline
+        Completeness                    & Availability           & Percentage of data values actually recorded compared to the expected number.  & Existing data, historic expected measurement frequency, data gaps, and reasons for missing data.                      \\ \hline
+        Completeness                    & Coverage               & The degree to which the recorded data covers the potential measurement space. & Spatio-temporal distribution of the data points, sensor placement, and measurement area or volume.                    \\ \hline
+        Consistency                     & Uniqueness             & No duplication of records measuring the same thing.                           & Duplicated records, data deduplication techniques, and record identifiers.                                            \\ \hline
+        Consistency                     & Integrity              & Data values respect specified constraints and rules.                          & Data type constraints, range constraints, format consistency, and cross-field validation rules.                       \\ \hline
+        Usability                       & Interpretability       & Presence of metadata to help understand encoded values.                       & Metadata standards, data dictionaries, measurement units, and data provenance.                                        \\ \hline
+        Usability                       & Ease of manipulation   & Suitability of the data format and semantics for aggregation and analysis.    & Data format standards, data schema, data transformation requirements, and compatibility with analysis tools.          \\ \hline
+    \end{tabular}
+    \caption{DQ dimensions and factors for WSN}
+    \label{table:dq_dimensions}
+\end{table}
